@@ -30,7 +30,6 @@ apt-get install
     python3-certbot \
     python3-certbot-nginx
 
-cd /etc/nginx && \
-    git clone https://github.com/mariusv/nginx-badbot-blocker.git && \
-    cp -R etc/nginx/* /etc/nginx/
+cp -R ./etc/nginx/* /etc/nginx/
+pushd /etc/nginx && git clone https://github.com/mariusv/nginx-badbot-blocker.git && popd
 
